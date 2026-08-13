@@ -1,0 +1,81 @@
+/* ---------------------------------------------------------------
+   Password box on encrypted posts.
+
+   hexo-blog-encrypt ships a floating-label input that is invisible
+   (opacity: 0) until focused, and the label sits on top of the field.
+   Against Fluid's dark background there is no visible box to click,
+   so readers cannot tell where to type. Turn it into a plain,
+   obvious password box with the label above it.
+   --------------------------------------------------------------- */
+
+.hbe-input-default {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  max-width: 24rem;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  height: auto !important;
+}
+
+/* label above the field, in normal flow.
+   In the markup the input comes before the label, so reorder it. */
+.hbe-input-label-default {
+  order: -1 !important;
+  position: static !important;
+  width: 100% !important;
+  padding: 0 0 0.5rem !important;
+  text-align: left;
+  pointer-events: auto;
+  user-select: auto;
+}
+
+.hbe-input-label-content-default {
+  position: static !important;
+  padding: 0 !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* the field itself: always visible, clearly a box */
+.hbe-input-field-default {
+  opacity: 1 !important;
+  width: 100% !important;
+  padding: 0.65rem 0.8rem !important;
+  margin: 0 0 1rem !important;
+  font-size: 1rem;
+  color: inherit;
+  background: rgba(127, 127, 127, 0.1) !important;
+  border: 1px solid rgba(127, 127, 127, 0.45) !important;
+  border-radius: 4px !important;
+  transition: border-color 0.15s ease;
+}
+
+.hbe-input-field-default:focus {
+  opacity: 1 !important;
+  outline: none;
+  border-color: #6c9bd2;
+}
+
+/* the plugin draws decorative underlines via the label's pseudo-elements */
+.hbe-input-label-default::before,
+.hbe-input-label-default::after {
+  display: none !important;
+}
+
+/* make the Decrypt button look like a button */
+#hbeButton {
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(127, 127, 127, 0.45);
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+#hbeButton:hover {
+  background: rgba(127, 127, 127, 0.15);
+}

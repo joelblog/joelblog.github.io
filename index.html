@@ -1,719 +1,797 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>Joel&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Joel Chou">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Joel&#39;s blog">
 <meta property="og:url" content="https://joelblog.github.io/index.html">
 <meta property="og:site_name" content="Joel&#39;s blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Joel Chou">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Joel's blog" type="application/atom+xml">
+<meta name="twitter:card" content="summary_large_image">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
   
+  <title>Joel&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
   
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"joelblog.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
-<link rel="stylesheet" href="/css/style.css">
+
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
 
-  
-<meta name="generator" content="Hexo 6.0.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Joel&#39;s blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Joel&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://joelblog.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Yiwu-Trip-Manifest" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/08/11/Yiwu-Trip-Manifest/" class="article-date">
-  <time class="dt-published" datetime="2026-08-11T06:10:00.000Z" itemprop="datePublished">2026-08-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/08/11/Yiwu-Trip-Manifest/">Yiwu Trip Manifest</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Alita and I are driving to Yiwu — three days inside the world’s largest wholesale market, about 75,000 booths under one roof. We are treating it as a working trip rather than a sightseeing tour: see the supply chain first, then make her compute the numbers.</p>
-<p>I put the whole plan on one page — the route from Shanghai, the budget, a day-by-day schedule, what to eat, and a field assignment for Alita that ends with her pitching a business idea to us on the drive home.</p>
-<p><strong><a href="/yiwu/">→ Read the full trip manifest</a></strong></p>
-<p>The page is password-protected — ask me for the password and it is yours. The checklists on it remember what you tick, so it works as a real planning document, not just something to read. Friends who want to make the same trip are welcome to use it.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2026/08/11/Yiwu-Trip-Manifest/" data-id="cmsqpdcfb00058bojc7gr90ry" data-title="Yiwu Trip Manifest" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/alita/" rel="tag">alita</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yiwu/" rel="tag">yiwu</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-About-Writing" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/08/11/About-Writing/" class="article-date">
-  <time class="dt-published" datetime="2026-08-11T04:47:48.000Z" itemprop="datePublished">2026-08-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/08/11/About-Writing/">About Writing</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        This post is protected. A password is required to read it.
-        
-          <p class="article-more-link">
-            <a href="/2026/08/11/About-Writing/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2026/08/11/About-Writing/" data-id="cmsqpdcf800008boj7j8e985y" data-title="About Writing" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/testing/" rel="tag">testing</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-新约脉络" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/" class="article-date">
-  <time class="dt-published" datetime="2022-08-19T07:38:25.000Z" itemprop="datePublished">2022-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/">新约脉络</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>是不是感觉读新约，就像在打转转，好多重复的，又没有条理。我也是有这个感觉。前面突发奇想，如果按新约各卷书作者写作的时间先后顺序，应该是有条理的。果然如此！<br>按写成的时间先后，顺序如下列。列中说明了书卷的主题。从这个顺序中，我们可以理清一些逻辑关系。举几个例子：一、最早一卷书，加拉太书的主题是自由，脱离律法，罪得赦免，人得自由。没有脱离束缚，没有自由，人就走不出来。没有走出来，带着枷锁，什么事情也做不了。二、第二卷书，雅各书的主题是真实的信仰，指出真正的信仰必带出行为，所以我们不要再纠结于，到底该不该有行为。三、第三卷书，关于将来，基督会再来。如果没有将来，当下还有什么意义呢。</p>
-<p>这样的逻辑关系，从头到尾，贯穿整个新约。你也来找找吧。</p>
-<ul>
-<li>加拉太书：自由</li>
-<li>雅各书：真实的信仰，行为</li>
-<li>贴前后：基督会再来</li>
-<li>哥林多前后：教会的问题</li>
-<li>罗马：因信称义</li>
-<li>马可：耶稣是仆人</li>
-<li>以弗所书：建立教会，教会的性质与使命</li>
-<li>歌罗西：基督里已经拥有一切</li>
-<li>腓利门：对待任何人都要尊重。</li>
-<li>腓利比：凡事喜乐</li>
-<li>马太：耶稣是王</li>
-<li>路加：耶稣是人</li>
-<li>犹大书：抵挡异端</li>
-<li>提摩太前书：鼓励年轻领袖</li>
-<li>彼得前书：鼓励面对苦难的信徒</li>
-<li>提多：教导教会领袖</li>
-<li>使徒行传：教会成长，传福音</li>
-<li>彼得后书：防备假教师</li>
-<li>提摩太后书：保罗最后的鼓励</li>
-<li>希伯来书：基督超越一切</li>
-<li>约翰福音：耶稣是神</li>
-<li>约翰一二三：神是爱，乐意款待人</li>
-<li>启示录：将来新天新地。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/" data-id="cmsqpdcfc000a8bojd9vkc7qn" data-title="新约脉络" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-World" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/06/22/World/" class="article-date">
-  <time class="dt-published" datetime="2022-06-21T23:00:27.000Z" itemprop="datePublished">2022-06-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/06/22/World/">World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="世界（World）"><a href="#世界（World）" class="headerlink" title="世界（World）"></a>世界（World）</h2><p>在圣经中，”World”一词最早出现在《创世纪》第11章第一节，世界的人要建造巴别塔。世界是骄傲的，是恶的。<br>世俗就是世界（World）。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/06/22/World/" data-id="cmsqpdcfb00048bojhtt80x6c" data-title="World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-每天一篇" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/" class="article-date">
-  <time class="dt-published" datetime="2022-06-20T22:59:57.000Z" itemprop="datePublished">2022-06-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/">每天一篇</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天写点什么呢？要请C、K、S、X、A来投稿。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/" data-id="cmsqpdcfc00098bojcfgs91ns" data-title="每天一篇" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="50+-2022" class="h-entry article article-type-50+" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/05/11/2022/" class="article-date">
-  <time class="dt-published" datetime="2022-05-11T14:16:34.000Z" itemprop="datePublished">2022-05-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/11/2022/">50+ Tools You NEED to Master Blockchain in 2022</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-Intro"><a href="#1-Intro" class="headerlink" title="1.Intro"></a>1.Intro</h2><h2 id="2-Programming-Languages"><a href="#2-Programming-Languages" class="headerlink" title="2.Programming Languages"></a>2.Programming Languages</h2><ul>
-<li>Solidity</li>
-<li>JavaScript</li>
-<li>python</li>
-<li>Rust</li>
-</ul>
-<h2 id="3-Frameworks-amp-IDEs"><a href="#3-Frameworks-amp-IDEs" class="headerlink" title="3.Frameworks &amp; IDEs"></a>3.Frameworks &amp; IDEs</h2><ul>
-<li>Hardhat</li>
-<li>Truffle</li>
-<li>Brownie</li>
-<li>dapp.tools</li>
-<li>Remix</li>
-<li><a href="docs.ethers.io">ethers</a></li>
-<li><a href="">web3.js</a></li>
-<li>[web3py]</li>
-</ul>
-<h2 id="4-Front-End"><a href="#4-Front-End" class="headerlink" title="4.Front End"></a>4.Front End</h2><ul>
-<li>React</li>
-<li>[useDApp]</li>
-<li>[Scaffold-ETH]</li>
-<li>[WalletConnect]</li>
-</ul>
-<h2 id="Test-Blockchains"><a href="#Test-Blockchains" class="headerlink" title="Test Blockchains"></a>Test Blockchains</h2><ul>
-<li>Ganache / GanacheCli<br>fork the real blockchain.</li>
-<li>Hardhat<br>Mainnet forking<h2 id="Nodes"><a href="#Nodes" class="headerlink" title="Nodes"></a>Nodes</h2></li>
-<li>infura</li>
-<li>alchemy</li>
-<li>QuickNode</li>
-<li>geth(Go Ethereum)</li>
-<li>OpenEthereum</li>
-</ul>
-<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><ul>
-<li> <a target="_blank" rel="noopener" href="https://thegraph.com/en/">thegraph</a></li>
-<li>Bitquery</li>
-</ul>
-<h2 id="Libraries-amp-SDKs"><a href="#Libraries-amp-SDKs" class="headerlink" title="Libraries &amp; SDKs"></a>Libraries &amp; SDKs</h2><ul>
-<li>OpenZeppelin</li>
-<li><a target="_blank" rel="noopener" href="https://docs.uniswap.org/sdk/introduction">Uniswap V3 SDK</a><br>V2 is very popular.</li>
-<li><a target="_blank" rel="noopener" href="https://compound.finance/docs/api">Compound SDK</a></li>
-<li>Curve<br> Defi Llama</li>
-</ul>
-<h2 id="Faucets"><a href="#Faucets" class="headerlink" title="Faucets"></a>Faucets</h2><ul>
-<li> <a target="_blank" rel="noopener" href="https://rinkebyfaucet.com/">rinkebyfaucet</a></li>
-<li> <a target="_blank" rel="noopener" href="https://faucets.chain.link/">Chainlink Faucets</a></li>
-</ul>
-<h2 id="Oracles"><a href="#Oracles" class="headerlink" title="Oracles"></a>Oracles</h2><ul>
-<li><a href="chain.link">Chainlink</a></li>
-<li><a target="_blank" rel="noopener" href="https://docs.chain.link/docs/chainlink-keepers/introduction/">Chainlink-keepers</a></li>
-</ul>
-<h2 id="Monitoring"><a href="#Monitoring" class="headerlink" title="Monitoring"></a>Monitoring</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://bloxy.info/">Bloxy</a></li>
-<li><a href="tenderly.co">tenderly</a></li>
-</ul>
-<h2 id="Hosting"><a href="#Hosting" class="headerlink" title="Hosting"></a>Hosting</h2><ul>
-<li><a href="fleek.co">fleek</a></li>
-<li><a href="pinata.cloud">Pinata</a></li>
-<li></li>
-</ul>
-<h2 id="Auditing"><a href="#Auditing" class="headerlink" title="Auditing"></a>Auditing</h2><ul>
-<li><a href="mythx.io">MythX</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/ConsenSys/mythril">Mythrill</a></li>
-</ul>
-<h2 id="Flash-Loans"><a href="#Flash-Loans" class="headerlink" title="Flash Loans"></a>Flash Loans</h2><ul>
-<li><p><a target="_blank" rel="noopener" href="https://docs.aave.com/faq/flash-loans">aave</a><br><a target="_blank" rel="noopener" href="https://collateralswap.com/">collateralswap</a></p>
-</li>
-<li><p>dydx<br>very low fee</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://dodoex.github.io/docs/docs/flashSwap/">dodo</a><br>V2</p>
-</li>
-</ul>
-<h2 id="Wallets"><a href="#Wallets" class="headerlink" title="Wallets"></a>Wallets</h2><ul>
-<li><p>Metamask<br>go  </p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.coinbase.com/wallet">Coinbase Wallet</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.argent.xyz/">argent</a><br>lay2 , zkSync , swap</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://phantom.app/">Phantom</a><br>solana</p>
-</li>
-</ul>
-<h2 id="Websites-amp-Utilities"><a href="#Websites-amp-Utilities" class="headerlink" title="Websites &amp; Utilities"></a>Websites &amp; Utilities</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://eth-converter.com/">Ethereum Unit Converter</a></li>
-<li><a target="_blank" rel="noopener" href="https://etherscan.io/gastracker">Ethereum Gas Tracker</a></li>
-<li><a target="_blank" rel="noopener" href="https://ultrasound.money/">Ultra Sound</a></li>
-<li>etherscan.io</li>
-<li><a target="_blank" rel="noopener" href="https://blockscan.com/address/0xea674fdde714fd979de3edf0f56aa9716b898ec8">blockscan.com</a><br>Click to view address on 12 other chains </li>
-</ul>
-<h2 id="Outro"><a href="#Outro" class="headerlink" title="Outro"></a>Outro</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.defipulse.com/">Defi Pulse</a></li>
-<li><a target="_blank" rel="noopener" href="https://defillama.com/">Defi Llama</a></li>
-<li><a target="_blank" rel="noopener" href="https://l2beat.com/">L2 Beat</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/05/11/2022/" data-id="cmsqpdcfd000d8boj6fa80wbc" data-title="50+ Tools You NEED to Master Blockchain in 2022" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-这是一个奇妙的世界" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%87%E5%A6%99%E7%9A%84%E4%B8%96%E7%95%8C/" class="article-date">
-  <time class="dt-published" datetime="2022-01-04T09:58:23.000Z" itemprop="datePublished">2022-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%87%E5%A6%99%E7%9A%84%E4%B8%96%E7%95%8C/">这是一个奇妙的世界</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>   这是一个奇妙的世界，一切看上去似乎都有生命。<br>   你瞧，窗外轻轻快快的西滴：嘀嘀、答答、嘀嘀、答答，可真是动听!雨点似乎在对我说：“下雨啦，下雨啦。“炎热的夏天到来了，头顶上有一大片死气沉沉的乌云，不久一到闪电就从我眼前划过<br>清晨,不知从哪儿冒出了一个大火球慢慢地飞到了天空上。一朵云飘来了，太阳便跳上去舒舒服服地坐在上面玩耍。可爱的小鸟飞来了,跟大阳公公问个好:“叽叽，叽叽叽，”<br>   这个世界是多么的奇妙呀。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/01/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%87%E5%A6%99%E7%9A%84%E4%B8%96%E7%95%8C/" data-id="cmsqpdcfd000b8bojh6staspf" data-title="这是一个奇妙的世界" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Alita-s-First-Post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/04/Alita-s-First-Post/" class="article-date">
-  <time class="dt-published" datetime="2022-01-04T01:27:17.000Z" itemprop="datePublished">2022-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/04/Alita-s-First-Post/">Alita&#39;s First Post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <pre><code>我爱兔宝
-兔宝可爱极了!长长的耳朵立在头顶,耳朵是黑色的。它还有一双炯炯有神的眼睛，真像两颗乌黑的宝石。兔宝的背上有3个黑色的小圆点，真像三粒扣子。兔宝俗称(熊猫兔)学名(海棠兔)为大型肉兔。
-调皮可爱的免宝,让我想起了小时候调皮可爱的我。
-</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/01/04/Alita-s-First-Post/" data-id="cmsqpdcfa00018boj4tmgbgd9" data-title="Alita&#39;s First Post" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-MY-new-Joelblog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/03/MY-new-Joelblog/" class="article-date">
-  <time class="dt-published" datetime="2022-01-03T09:22:06.000Z" itemprop="datePublished">2022-01-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/03/MY-new-Joelblog/">MY new Joelblog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这是我的第一条博客。2022年1月4日 约耳</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/01/03/MY-new-Joelblog/" data-id="cmsqpdcfb00038boj8nizhsba" data-title="MY new Joelblog" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/03/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-01-03T03:02:06.968Z" itemprop="datePublished">2022-01-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://joelblog.github.io/2022/01/03/hello-world/" data-id="cmsqpdcfc00078boj6xbp04ed" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/alita/" rel="tag">alita</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testing/" rel="tag">testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yiwu/" rel="tag">yiwu</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/alita/" style="font-size: 10px;">alita</a> <a href="/tags/testing/" style="font-size: 10px;">testing</a> <a href="/tags/travel/" style="font-size: 10px;">travel</a> <a href="/tags/yiwu/" style="font-size: 10px;">yiwu</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/08/">August 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2026/08/11/Yiwu-Trip-Manifest/">Yiwu Trip Manifest</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
           </li>
+          
         
-          <li>
-            <a href="/2026/08/11/About-Writing/">About Writing</a>
-          </li>
         
-          <li>
-            <a href="/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/">新约脉络</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/22/World/">World</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/">每天一篇</a>
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
-  
-</aside>
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tags</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2026 Joel Chou<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer>
+</div>
 
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="A father and a daughter, writing something every day."></span>
+          
+        </div>
+
+        
+      </div>
+
+      
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<h1 style="display: none">Joel&#39;s blog</h1>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/11/Yiwu-Trip-Manifest/" target="_self">
+          Yiwu Trip Manifest
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/11/Yiwu-Trip-Manifest/" target="_self">
+        <div>
+          Alita and I are driving to Yiwu — three days inside the world’s largest wholesale market, about 75,000 booths under one roof. We are treating it as a working trip rather than a sightseeing tour: see t
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-11 14:10" pubdate>
+              2026-08-11
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/travel/">#travel</a>
+            
+              <a href="/tags/yiwu/">#yiwu</a>
+            
+              <a href="/tags/alita/">#alita</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/11/About-Writing/" target="_self">
+          About Writing
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/11/About-Writing/" target="_self">
+        <div>
+          This post is protected. A password is required to read it.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-11 12:47" pubdate>
+              2026-08-11
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/testing/">#testing</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/" target="_self">
+          新约脉络
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/19/%E6%96%B0%E7%BA%A6%E8%84%89%E7%BB%9C/" target="_self">
+        <div>
+          是不是感觉读新约，就像在打转转，好多重复的，又没有条理。我也是有这个感觉。前面突发奇想，如果按新约各卷书作者写作的时间先后顺序，应该是有条理的。果然如此！按写成的时间先后，顺序如下列。列中说明了书卷的主题。从这个顺序中，我们可以理清一些逻辑关系。举几个例子：一、最早一卷书，加拉太书的主题是自由，脱离律法，罪得赦免，人得自由。没有脱离束缚，没有自由，人就走不出来。没有走出来，带着枷锁，什么事情也做不
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-19 15:38" pubdate>
+              2022-08-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/06/22/World/" target="_self">
+          World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/22/World/" target="_self">
+        <div>
+          世界（World）在圣经中，”World”一词最早出现在《创世纪》第11章第一节，世界的人要建造巴别塔。世界是骄傲的，是恶的。世俗就是世界（World）。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-22 07:00" pubdate>
+              2022-06-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/" target="_self">
+          每天一篇
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/21/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87/" target="_self">
+        <div>
+          今天写点什么呢？要请C、K、S、X、A来投稿。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-21 06:59" pubdate>
+              2022-06-21
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/05/11/2022/" target="_self">
+          50+ Tools You NEED to Master Blockchain in 2022
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/11/2022/" target="_self">
+        <div>
+          1.Intro2.Programming Languages Solidity JavaScript python Rust  3.Frameworks &amp; IDEs Hardhat Truffle Brownie dapp.tools Remix ethers web3.js [web3py]  4.Front End React [useDApp] [Scaffold-ETH] [Wa
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-05-11 22:16" pubdate>
+              2022-05-11
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/01/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%87%E5%A6%99%E7%9A%84%E4%B8%96%E7%95%8C/" target="_self">
+          这是一个奇妙的世界
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%87%E5%A6%99%E7%9A%84%E4%B8%96%E7%95%8C/" target="_self">
+        <div>
+          这是一个奇妙的世界，一切看上去似乎都有生命。   你瞧，窗外轻轻快快的西滴：嘀嘀、答答、嘀嘀、答答，可真是动听!雨点似乎在对我说：“下雨啦，下雨啦。“炎热的夏天到来了，头顶上有一大片死气沉沉的乌云，不久一到闪电就从我眼前划过清晨,不知从哪儿冒出了一个大火球慢慢地飞到了天空上。一朵云飘来了，太阳便跳上去舒舒服服地坐在上面玩耍。可爱的小鸟飞来了,跟大阳公公问个好:“叽叽，叽叽叽，”   这个世界
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-04 17:58" pubdate>
+              2022-01-04
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/01/04/Alita-s-First-Post/" target="_self">
+          Alita&#39;s First Post
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/04/Alita-s-First-Post/" target="_self">
+        <div>
+          我爱兔宝 兔宝可爱极了!长长的耳朵立在头顶,耳朵是黑色的。它还有一双炯炯有神的眼睛，真像两颗乌黑的宝石。兔宝的背上有3个黑色的小圆点，真像三粒扣子。兔宝俗称(熊猫兔)学名(海棠兔)为大型肉兔。 调皮可爱的免宝,让我想起了小时候调皮可爱的我。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-04 09:27" pubdate>
+              2022-01-04
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/01/03/MY-new-Joelblog/" target="_self">
+          MY new Joelblog
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/03/MY-new-Joelblog/" target="_self">
+        <div>
+          这是我的第一条博客。2022年1月4日 约耳
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-03 17:22" pubdate>
+              2022-01-03
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2022/01/03/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/03/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-03 11:02" pubdate>
+              2022-01-03
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-  </div>
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>
