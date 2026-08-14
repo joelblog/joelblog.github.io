@@ -65,8 +65,9 @@
   display: none !important;
 }
 
-/* make the Decrypt button look like a button */
-#hbeButton {
+/* make the Decrypt button look like a button.
+   Note: the element has class hbe-button and no id. */
+.hbe-button {
   display: inline-block;
   padding: 0.5rem 1.6rem;
   font-weight: 600;
@@ -76,6 +77,6 @@
   transition: background 0.15s ease;
 }
 
-#hbeButton:hover {
+.hbe-button:hover {
   background: rgba(127, 127, 127, 0.15);
 }
